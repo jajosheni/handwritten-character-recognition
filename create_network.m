@@ -12,7 +12,7 @@ target = normalize_targets(targets); % olusturdugumuz normalize target fonk. cag
 S1=65; % hidden layer neurons = 65 secmeli
 
 net = feedforwardnet(S1, 'trainscg'); % Scaled Conjugate Gradient Training.
-net.trainParam.epochs=1000; % 1000 iterasyon, zaman kisitlama icin
+net.trainParam.epochs=1000; % 1000 iterasyon, zaman kisitlama icin, (daha iyi sonuclar icin 4000 yap)
 net.trainParam.goal=1e-6; % 1e-x => 1 * 10^-x
 net.trainParam.max_fail = 6;
 [net,train_perfomance] = train(net,input,target); %start training
