@@ -1,5 +1,10 @@
 % import_dataset calistirdiktan sonra bu dosyayi calistir 
 
+%
+% The best settings are epochs = 4000 and max_fail = 7
+% Training should last for about 4 hours
+%
+
 input=ones(784,dataset_rows); % 1 dolu bir 784 * y matris butun harfleri tutmak icin
 
 for i=1:dataset_rows %normalize resimler 
